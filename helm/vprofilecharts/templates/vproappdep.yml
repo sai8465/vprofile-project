@@ -16,9 +16,7 @@ spec:
     spec:
       containers:
       - name: image
-        image: {{ Values.image }}
-      - name: image.tag
-        image: {{ Values.image.tag }}
+        image: sai8465/vproapp:latest
         ports:
         - name: vproapp-port
           containerPort: 8080
